@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/cardview_dark_background"
+    android:padding="@dimen/activity_horizontal_margin">
+
+    <EditText
+        android:id="@+id/personText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textEmailAddress"
+        android:textColor="@color/white"
+        android:hint="Masukan Email"
+        android:ems="10"
+        android:layout_marginBottom="@dimen/margin_10" />
+
+    <EditText
+        android:id="@+id/DeskripiText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:inputType="text|textLongMessage"
+        android:ems="10"
+        android:hint="Deskripsi"
+        android:layout_marginBottom="@dimen/margin_10" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnAdd"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:layout_marginRight="50px"
+            android:text="@string/add"
+            android:backgroundTint="#FF03DAC5"/>
+
+        <Button
+            android:id="@+id/btnEdit"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:layout_marginRight="50px"
+            android:backgroundTint="#FF03DAC5"
+            android:text="@string/edit" />
+
+        <Button
+            android:id="@+id/btnDelete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/colorRed"
+            android:text="@string/delete"/>
+
+    </LinearLayout>
+
+</LinearLayout>
